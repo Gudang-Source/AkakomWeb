@@ -92,6 +92,41 @@
 	    <span class="sr-only">Next</span>
 	  </a>
 	</div>
+	<br><br><br>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+				<div class="card">
+				  <img class="card-img-top" style="height:250px" src="img/kuliahtamu.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <h4 class="card-title">Kuliah TAMU Dengan Tema “Mencegah Pa...</h4>
+				    <p class="card-text" align="justify">Kuliah TAMU dengan tema “Mencegah Paham Radikalisme dengan Mengamalkan Pancasila”...</p>
+				    <a href="#" class="btn btn-primary">Selengkapnya</a>
+				  </div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+				<div class="card">
+				  <img class="card-img-top" style="height:250px" src="img/freeport.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <h4 class="card-title">Kunjungan PT Freeport Indonesia Ke STMIK...</h4>
+				    <p class="card-text" align="justify">STMIK AKAKOM selalu bekerjasama dengan berbagai macam perusahaan-perusahaan di Indonesia,...</p>
+				    <a href="#" class="btn btn-primary">Selengkapnya</a>
+				  </div>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+				<div class="card">
+				  <img class="card-img-top" style="height:250px" src="img/pelepasanpurna.jpg" alt="Card image cap">
+				  <div class="card-body">
+				    <h4 class="card-title">Pelepasan Purna Tugas Bapak Ir. Hadiyono, M.M</h4>
+				    <p class="card-text" align="justify">Bapak Ir. Hadiyono, M.M. adalah salah satu dosen STMIK AKAKOM Yogyakarta yang sudah mengabdi...</p>
+				    <a href="#" class="btn btn-primary">Selengkapnya</a>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/popper.js"></script>
