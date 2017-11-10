@@ -21,7 +21,7 @@
 	          Profil Akakom
 	        </a>
 	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-	          <a class="dropdown-item" href="#">Visi dan Misi</a>
+	          <a class="dropdown-item" href="visimisi.php">Visi dan Misi</a>
 	          <a class="dropdown-item" href="#">Profil STMIK Akakom</a>
 						<a class="dropdown-item" href="#">Kontak Kami</a>
 						<a class="dropdown-item" href="#">Pejabat di STMIK Akakom</a>
