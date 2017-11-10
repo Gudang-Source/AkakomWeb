@@ -4,7 +4,7 @@
 <head>
   <title>Akakom</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet"  href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
   <style>
     .footer {
       position: absolute;
@@ -52,7 +52,7 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="#">STMIK Akakom</a>
+    <a class="navbar-brand" href="index.php">STMIK Akakom</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -71,10 +71,10 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="visimisi.php">Visi dan Misi</a>
-            <a class="dropdown-item" href="#">Profil STMIK Akakom</a>
+            <a class="dropdown-item" href="profile.php">Profil STMIK Akakom</a>
             <a class="dropdown-item" href="#">Kontak Kami</a>
-            <a class="dropdown-item" href="#">Pejabat di STMIK Akakom</a>
-            <a class="dropdown-item" href="#">Kontak Dosen STMIK Akakom</a>
+            <a class="dropdown-item" href="pejabat.php">Pejabat di STMIK Akakom</a>
+            <a class="dropdown-item" href="kontak.php">Kontak Dosen STMIK Akakom</a>
           </div>
         </li>
         <li class="nav-item dropdown">
@@ -83,21 +83,21 @@
             Program Studi/ Jurusan
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Komputerisasi Akuntansi (D3)</a>
-            <a class="dropdown-item" href="#">Teknik Komputer (D3) </a>
-            <a class="dropdown-item" href="#">Manajemen Informatika (D3)</a>
-            <a class="dropdown-item" href="#">Sistem Informasi (S1)</a>
-            <a class="dropdown-item" href="#">Teknik Informatika (S1)</a>
+            <a class="dropdown-item" href="ka.php">Komputerisasi Akuntansi (D3)</a>
+            <a class="dropdown-item" href="tk.php">Teknik Komputer (D3) </a>
+            <a class="dropdown-item" href="mi.php">Manajemen Informatika (D3)</a>
+            <a class="dropdown-item" href="si.php">Sistem Informasi (S1)</a>
+            <a class="dropdown-item" href="ti.php">Teknik Informatika (S1)</a>
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Info Kampus</a>
+          <a class="nav-link" href="info_kampus.php">Info Kampus</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Berita</a>
+          <a class="nav-link" href="berita.php">Berita</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Arsip Umum</a>
+          <a class="nav-link" href="arsip_umum.php">Arsip Umum</a>
         </li>
       </ul>
 
@@ -121,7 +121,8 @@
 
           <p>STMIK AKAKOM mempunyai visi untuk menjadi perguruan tinggi unggulan dalam bidang teknologi informasi yang bertumpu
             pada nilai-nilai dan etika kehidupan yang baik, benar dan universal untuk mewujudkan peningkatan taraf hidup
-            bangsa.</p>
+            bangsa.
+          </p>
         </div>
       </div>
       <div class="col">
@@ -131,7 +132,8 @@
         <div class="content content-inline">
           <p>STMIK AKAKOM mempunyai visi untuk menjadi perguruan tinggi unggulan dalam bidang teknologi informasi yang bertumpu
             pada nilai-nilai dan etika kehidupan yang baik, benar dan universal untuk mewujudkan peningkatan taraf hidup
-            bangsa.</p>
+            bangsa.
+          </p>
         </div>
       </div>
     </div>
@@ -218,7 +220,7 @@
     </div>
   </div>
   <script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/popper.js"></script>
+  <script src="js/popper.js"></script>
   <script src="js/bootstrap.min.js"></script>
 </body>
 
