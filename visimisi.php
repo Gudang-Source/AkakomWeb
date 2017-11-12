@@ -71,7 +71,7 @@
   <div class="container text-justify">
     <div class="row">
       <div class="col">
-        <div class="card">
+        <div class="card" style="padding:1em">
           <div class="card-block">
             <h3 class="card-title">Visi</h3>
             <p>STMIK AKAKOM mempunyai visi untuk menjadi perguruan tinggi unggulan dalam bidang teknologi informasi yang bertumpu
@@ -82,7 +82,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="card">
+        <div class="card" style="padding:1em">
           <div class="card-block">
             <h3 class="card-title">Misi</h3>
             <p>STMIK AKAKOM mempunyai visi untuk menjadi perguruan tinggi unggulan dalam bidang teknologi informasi yang bertumpu
@@ -97,7 +97,7 @@
     <br>
     <div class="row">
       <div class="col">
-        <div class="card">
+        <div class="card" style="padding:1em">
           <div class="card-block">
             <h3 class="card-title">Tujuan</h3>
             Tujuan yang ingin dicapai STMIK AKAKOM adalah :
@@ -127,7 +127,7 @@
         <br>
         <div class="row">
           <div class="col">
-            <div class="card">
+            <div class="card" style="padding:1em">
               <div class="card-block">
                 <h3 class="card-title">Sasaran</h3>
                 Untuk mencapai 5 tujuan tersebut, perlu ditetapkan sasaran-sasaran yang dapat diukur ketercapaiannya. Sasaran yang dikelompokkan
