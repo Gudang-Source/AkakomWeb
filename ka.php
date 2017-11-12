@@ -66,7 +66,7 @@
           <div class="card-header bg-primary text-white">
             Program Studi/Jurusan
           </div>
-          <div class="card-body">
+          <div class="card-body text-justify">
             <center><h4><b>Komputer Akuntansi ( D3 )</b></h4></center>
 
               <h5><b>1.1. Pendahuluan</b></h5>
