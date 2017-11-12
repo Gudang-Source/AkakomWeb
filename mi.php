@@ -7,7 +7,7 @@
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-	  <a class="navbar-brand" href="#">STMIK Akakom</a>
+	  <a class="navbar-brand" href="index.php">STMIK Akakom</a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
@@ -21,11 +21,11 @@
 	          Profil Akakom
 	        </a>
 	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-	          <a class="dropdown-item" href="#">Visi dan Misi</a>
-	          <a class="dropdown-item" href="#">Profil STMIK Akakom</a>
+	          <a class="dropdown-item" href="visimisi.php">Visi dan Misi</a>
+	          <a class="dropdown-item" href="profile.php">Profil STMIK Akakom</a>
 						<a class="dropdown-item" href="#">Kontak Kami</a>
-						<a class="dropdown-item" href="#">Pejabat di STMIK Akakom</a>
-						<a class="dropdown-item" href="#">Kontak Dosen STMIK Akakom</a>
+						<a class="dropdown-item" href="pejabat.php">Pejabat di STMIK Akakom</a>
+						<a class="dropdown-item" href="kontak.php">Kontak Dosen STMIK Akakom</a>
 	        </div>
 	      </li>
 				<li class="nav-item dropdown">
@@ -41,13 +41,13 @@
 	        </div>
 	      </li>
 				<li class="nav-item">
-	        <a class="nav-link" href="#">Info Kampus</a>
+	        <a class="nav-link" href="info_kampus.php">Info Kampus</a>
 	      </li>
 				<li class="nav-item">
-	        <a class="nav-link" href="#">Berita</a>
+	        <a class="nav-link" href="berita.php">Berita</a>
 	      </li>
 				<li class="nav-item">
-	        <a class="nav-link" href="#">Arsip Umum</a>
+	        <a class="nav-link" href="arsip_umum.php">Arsip Umum</a>
 	      </li>
 	    </ul>
 
@@ -170,51 +170,51 @@
               Tautan
             </div>
             <div class="card-body">
-              <ul class="list-group list-group-flush">
+							<ul class="list-group list-group-flush">
                 <li class="list-group-item">
-                  <a href="#">Yayasan Pendididkan Widya Bakti</a>
+                  <a href="http://www.widyabaktiyk.or.id/" target="output">Yayasan Pendididkan Widya Bakti</a>
                 </li>
                 <li class="list-group-item">
-                  <a href="#">Pendaftaran Mahasiswa </a>
+                  <a href="https://pmb.akakom.ac.id/web/index.php" target="output">Pendaftaran Mahasiswa </a>
                 </li>
                 <li class="list-group-item">
-                  <a href="#">Blog Mahasiswa</a>
+                  <a href="http://blog.akakom.ac.id/" target="output">Blog Mahasiswa</a>
                 </li>
                 <li class="list-group-item">
-                  <a href="#">Portal Akademik</a>
+                  <a href="https://siakad.akakom.ac.id/" target="output">Portal Akademik</a>
                 </li>
                 <li class="list-group-item">
-                  <a href="#">Laboratorium Akakom</a>
+                  <a href="http://lab.akakom.ac.id/" target="output">Laboratorium Akakom</a>
                 </li>
                 <li class="list-group-item">
-                  <a href="#">Career Center</a>
+                  <a href="http://acc.akakom.ac.id/" target="output">Career Center</a>
                 </li>
                 <li class="list-group-item">
-                  <a href="#">Ikatan Keluarga Alumni</a>
+                  <a href="http://ika.akakom.ac.id/" target="output">Ikatan Keluarga Alumni</a>
                 </li>
                 <li class="list-group-item">
-                  <a href="#">Olimpiade Komputer</a>
+                  <a href="http://olimpiade.akakom.ac.id/" target="output">Olimpiade Komputer</a>
                 </li>
                 <li class="list-group-item">
-                  <a href="#">SRITI Akakom</a>
+                  <a href="http://sriti.akakom.ac.id/" target="output">SRITI Akakom</a>
                 </li>
                 <li class="list-group-item">
-                  <a href="#">Pusat Jaminan Mutu</a>
+                  <a href="https://pjm.akakom.ac.id/index1.html" target="output">Pusat Jaminan Mutu</a>
                 </li>
                 <li class="list-group-item">
-                  <a href="#">Perpustakaan Akakom</a>
+                  <a href="https://perpus.akakom.ac.id/site/" target="output">Perpustakaan Akakom</a>
                 </li>
                 <li class="list-group-item">
-                  <a href="#">DIKTI</a>
+                  <a href="https://dikti.go.id/" target="output">DIKTI</a>
                 </li>
                 <li class="list-group-item">
-                  <a href="#">Puslitbang AKAKOM</a>
+                  <a href="https://puslitbang.akakom.ac.id/" target="output">Puslitbang AKAKOM</a>
                 </li>
                 <li class="list-group-item">
-                  <a href="#">Jiko-AKAKOM</a>
+                  <a href="https://ejournal.akakom.ac.id/index.php/jiko" target="output">Jiko-AKAKOM</a>
                 </li>
                 <li class="list-group-item">
-                  <a href="#">AKAKOM IT Fest 2016</a>
+                  <a href="http://itfest.akakom.ac.id/" target="output">AKAKOM IT Fest 2016</a>
                 </li>
               </ul>
             </div>
