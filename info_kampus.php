@@ -40,7 +40,7 @@
 						<a class="dropdown-item" href="ti.php">Teknik Informatika (S1)</a>
 	        </div>
 	      </li>
-				<li class="nav-item">
+				<li class="nav-item active">
 	        <a class="nav-link" href="info_kampus.php">Info Kampus</a>
 	      </li>
 				<li class="nav-item">

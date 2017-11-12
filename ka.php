@@ -28,12 +28,12 @@
 						<a class="dropdown-item" href="kontak.php">Kontak Dosen STMIK Akakom</a>
 	        </div>
 	      </li>
-				<li class="nav-item dropdown">
+				<li class="nav-item dropdown active">
 	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 	          Program Studi/ Jurusan
 	        </a>
 	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-	          <a class="dropdown-item" href="ka.php">Komputerisasi Akuntansi (D3)</a>
+	          <a class="dropdown-item active" href="ka.php">Komputerisasi Akuntansi (D3)</a>
 	          <a class="dropdown-item" href="tk.php">Teknik Komputer (D3) </a>
 						<a class="dropdown-item" href="mi.php">Manajemen Informatika (D3)</a>
 						<a class="dropdown-item" href="si.php">Sistem Informasi (S1)</a>
