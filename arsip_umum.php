@@ -64,8 +64,101 @@
 			</form>
 		</div>
 	</nav>
-
 	<br>
+
+
+
+<div class="container">
+		<h2>Arsip Umum</h2>
+	<div class="row" >
+	<div class="col-sm-6">
+		<div class="card" style="padding:1em">
+			<div class="card-block">
+				<h3 class="card-title">Kalender Akademik</h3>
+				<p>admin, Sel, 4-Agt-2015 08:27:35</p>
+				<a href="https://www.akakom.ac.id/site/artikel/193/kalender-akademik" class="btn btn-primary">Buka</a>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-6">
+		<div class="card" style="padding:1em">
+			<div class="card-block">
+				<h3 class="card-title">Blog STMIK AKAKOM Yogyakarta</h3>
+				<p>Jum, 13-Sep-2013 08:05:25</p>
+				<a href="https://www.akakom.ac.id/site/artikel/193/kalender-akademik" class="btn btn-primary">Buka</a></a>
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+
+<div class="row">
+	<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+		<div class="card">
+			<div class="card-header bg-primary text-white">
+				Arsip Utama
+			</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item">
+					<small class="text-muted">kontributor, Jum, 20-Okt-2017 03:52:06</small>
+					<br>
+					<a href="#">Kunjungan Audiensi BNNP DIY Dengan Satgas Anti Narkoba Akakom (RAHASIA)</a>
+				</li>
+				<li class="list-group-item">
+					<small class="text-muted">kontributor, Sen, 2-Okt-2017 08:05:00</small>
+					<br>
+					<a href="#">Wisuda Diploma Dan Sarjana STMIK AKAKOM Yogyakarta Periode I Tahun Akademik ...</a>
+				</li>
+				<li class="list-group-item">
+					<small class="text-muted">admin, Jum, 29-Sep-2017 05:00:33</small>
+					<br>
+					<a href="#">Mahasiswa Akakom Akan Berangkat Ke Jepang</a>
+				</li>
+				<li class="list-group-item">
+					<small class="text-muted">admin, Jum, 29-Sep-2017 04:16:37</small>
+					<br>
+					<a href="#">Pelatihan & Sosialisasi Program Kegiatan Mahasiswa (PKM)</a>
+				</li>
+				<li class="list-group-item">
+					<small class="text-muted">admin, Kam, 14-Sep-2017 07:31:54</small>
+					<br>
+					<a href="#">Kegiatan PESONA AKAKOM 2017</a>
+				</li>
+				<li class="list-group-item">
+					<small class="text-muted">admin, Kam, 14-Sep-2017 07:07:24</small>
+					<br>
+					<a href="#">Kegiatan Confrence Dan Workshop OWASP 2017</a>
+				</li>
+				<li class="list-group-item">
+					<small class="text-muted">admin, Sen, 4-Sep-2017 06:02:51</small>
+					<br>
+					<a href="#">Workshop Training For Trainer Bersama NIIT</a>
+				</li>
+				<li class="list-group-item">
+					<small class="text-muted">admin, Kam, 31-Agt-2017 11:38:31</small>
+					<br>
+					<a href="#">PENGUMUMAN PESONA 2017 BAGI MAHASISWA BARU</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+		<div class="row">
+			<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<img class="img-fluid" src="img/programerBersertifikat.png">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+				<img class="img-fluid" src="img/cisco-logo.gif">
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+				<img class="img-fluid" src="img/jeni.jpg">
+			</div>
+		</div>
+	</div>
+</div>
+<br>
 	<div class="jumbotron jumbotron-fluid">
 		<div class="container">
 			<h4 class="display-12 text-danger">Yang Pertama dan Utama</h4>
@@ -77,6 +170,7 @@
 			<hr class="my-4">
 			<img class="img-fluid" style="width:100%" src="img/jurusan.png">
 		</div>
+	</div>
 	</div>
 	</div>
 

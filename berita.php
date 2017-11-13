@@ -75,6 +75,8 @@
 						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
 						<a href="#" class="btn btn-primary">Go somewhere</a>
 					</div>
+				</div>
+				<div class="card" style="margin-bottom:1em;">
 					<div class="card-block" style="padding:1em; ">
 						<h4 class="card-title">Judul</h4>
 						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -139,13 +141,8 @@
 						</ul>
 					</div>
 				</div>
-			</div>
 
-			<br>
-
-		</div>
-		<div class="row">
-			<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+				<br>
 				<div class="card">
 					<div class="card-header bg-primary text-white">
 						Arsip Utama
@@ -194,23 +191,36 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-				<div class="row">
-					<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-						<img class="img-fluid" src="img/programerBersertifikat.png">
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-						<img class="img-fluid" src="img/cisco-logo.gif">
-					</div>
-					<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-						<img class="img-fluid" src="img/jeni.jpg">
-					</div>
-				</div>
-			</div>
 		</div>
 		<br>
+		<div class="row">
+			<div class="col">
+				<nav aria-label="...">
+					<ul class="pagination">
+						<li class="page-item disabled">
+							<a class="page-link" href="#" tabindex="-1">Previous</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link" href="#">1</a>
+						</li>
+						<li class="page-item active">
+							<a class="page-link" href="#">2
+								<span class="sr-only">(current)</span>
+							</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link" href="#">3</a>
+						</li>
+						<li class="page-item">
+							<a class="page-link" href="#">Next</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+		</div>
+	</div>
+	<br>
 	</div>
 
 	<br>

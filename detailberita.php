@@ -2,14 +2,14 @@
 <html>
 
 <head>
-	<title>STMIK Akakom | Info Kampus</title>
+	<title>STMIK Akakom</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="css/bootstrap.css">
 </head>
 
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-		<a class="navbar-brand" href="index.php">STMIK Akakom</a>
+		<a class="navbar-brand" href="index.php">STMIK Akakom | Berita</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 		    aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -48,9 +48,9 @@
 					</div>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link active" href="info_kampus.php">Info Kampus</a>
+					<a class="nav-link" href="info_kampus.php">Info Kampus</a>
 				</li>
-				<li class="nav-item ">
+				<li class="nav-item active">
 					<a class="nav-link" href="berita.php">Berita</a>
 				</li>
 				<li class="nav-item">
@@ -68,21 +68,14 @@
 	<div class="container">
 		<div class="row">
 			<div class="col">
-				<h2 style="margin-top:1em; margin-bottom:0.5em">Info Kampu</h2>
+				<h2 style="margin-top:1em; margin-bottom:0.5em">Judul Berita</h2>
 				<div class="card" style="margin-bottom:1em;">
 					<div class="card-block" style="padding:1em; ">
-						<h4 class="card-title">Judul</h4>
-						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-						<a href="#" class="btn btn-primary">Go somewhere</a>
+						<p class="card-title">Author, Tanggal</p>
+						<p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					</div>
 				</div>
-				<div class="card" style="margin-bottom:1em;">
-					<div class="card-block" style="padding:1em; ">
-						<h4 class="card-title">Judul</h4>
-						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-						<a href="#" class="btn btn-primary">Go somewhere</a>
-					</div>
-				</div>
+
 			</div>
 
 			<div class="col-sm-3">
