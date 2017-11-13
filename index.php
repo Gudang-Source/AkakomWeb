@@ -1,3 +1,10 @@
+<?php
+	include "koneksi.php";
+	$sqlHeadline = "SELECT * FROM tb_berita WHERE id_kategori=1 ORDER BY id DESC LIMIT 3";
+	$sqlUtama = "SELECT * FROM tb_berita WHERE arsip_utama=1 ORDER BY id DESC LIMIT 8";
+	$headline = mysqli_query($konek, $sqlHeadline);
+	$arsip = mysqli_query($konek, $sqlUtama);
+?>
 <!DOCTYPE html>
 <html>
 
@@ -103,30 +110,18 @@
 	<div class="container">
 		<div class="row">
 			<div class="card-deck">
+				<?php while ($row=mysqli_fetch_assoc($headline)) { ?>
 				<div class="card">
-					<img class="card-img-top" src="img/kuliahtamu.jpg" alt="Card image cap">
+					<img class="card-img-top" src="img/<?php echo $row['gambar']; ?>" alt="Card image cap">
 					<div class="card-body">
-						<h4 class="card-title">Kuliah TAMU Dengan Tema “Mencegah Pa...</h4>
-						<p class="card-text" align="justify">Kuliah TAMU dengan tema “Mencegah Paham Radikalisme dengan Mengamalkan Pancasila”...</p>
-						<a href="#" class="btn btn-primary">Selengkapnya</a>
+						<h4 class="card-title" align="justify"><?php echo $row['judul']; ?></h4>
+						<p class="card-text" align="justify">
+							<?php echo substr($row['isi'], 0, 90)."..."; ?>
+						</p>
+						<a href="<?php echo "detailberita.php?id=".$row['id']; ?>" class="btn btn-primary">Selengkapnya</a>
 					</div>
 				</div>
-				<div class="card">
-					<img class="card-img-top" src="img/freeport.jpg" alt="Card image cap">
-					<div class="card-body">
-						<h4 class="card-title">Kunjungan PT Freeport Indonesia Ke STMIK...</h4>
-						<p class="card-text" align="justify">STMIK AKAKOM selalu bekerjasama dengan berbagai macam perusahaan-perusahaan di Indonesia,...</p>
-						<a href="#" class="btn btn-primary">Selengkapnya</a>
-					</div>
-				</div>
-				<div class="card">
-					<img class="card-img-top" src="img/pelepasanpurna.jpg" alt="Card image cap">
-					<div class="card-body">
-						<h4 class="card-title">Pelepasan Purna Tugas Bapak Ir. Hadiyono, M.M</h4>
-						<p class="card-text" align="justify">Bapak Ir. Hadiyono, M.M. adalah salah satu dosen STMIK AKAKOM Yogyakarta yang sudah mengabdi...</p>
-						<a href="#" class="btn btn-primary">Selengkapnya</a>
-					</div>
-				</div>
+				<?php } ?>
 			</div>
 		</div>
 		<br>
@@ -137,46 +132,15 @@
 						Arsip Utama
 					</div>
 					<ul class="list-group list-group-flush">
+						<?php
+							while ($row=mysqli_fetch_assoc($arsip)) {
+						?>
 						<li class="list-group-item">
-							<small class="text-muted">kontributor, Jum, 20-Okt-2017 03:52:06</small>
+							<small class="text-muted"><?php echo $row['author']; ?>, <?php echo $row['tanggal']; ?></small>
 							<br>
-							<a href="#">Kunjungan Audiensi BNNP DIY Dengan Satgas Anti Narkoba Akakom (RAHASIA)</a>
+							<a href="<?php echo "detailberita.php?id=".$row['id']; ?>"><?php echo $row['judul']; ?></a>
 						</li>
-						<li class="list-group-item">
-							<small class="text-muted">kontributor, Sen, 2-Okt-2017 08:05:00</small>
-							<br>
-							<a href="#">Wisuda Diploma Dan Sarjana STMIK AKAKOM Yogyakarta Periode I Tahun Akademik ...</a>
-						</li>
-						<li class="list-group-item">
-							<small class="text-muted">admin, Jum, 29-Sep-2017 05:00:33</small>
-							<br>
-							<a href="#">Mahasiswa Akakom Akan Berangkat Ke Jepang</a>
-						</li>
-						<li class="list-group-item">
-							<small class="text-muted">admin, Jum, 29-Sep-2017 04:16:37</small>
-							<br>
-							<a href="#">Pelatihan & Sosialisasi Program Kegiatan Mahasiswa (PKM)</a>
-						</li>
-						<li class="list-group-item">
-							<small class="text-muted">admin, Kam, 14-Sep-2017 07:31:54</small>
-							<br>
-							<a href="#">Kegiatan PESONA AKAKOM 2017</a>
-						</li>
-						<li class="list-group-item">
-							<small class="text-muted">admin, Kam, 14-Sep-2017 07:07:24</small>
-							<br>
-							<a href="#">Kegiatan Confrence Dan Workshop OWASP 2017</a>
-						</li>
-						<li class="list-group-item">
-							<small class="text-muted">admin, Sen, 4-Sep-2017 06:02:51</small>
-							<br>
-							<a href="#">Workshop Training For Trainer Bersama NIIT</a>
-						</li>
-						<li class="list-group-item">
-							<small class="text-muted">admin, Kam, 31-Agt-2017 11:38:31</small>
-							<br>
-							<a href="#">PENGUMUMAN PESONA 2017 BAGI MAHASISWA BARU</a>
-						</li>
+						<?php } ?>
 					</ul>
 				</div>
 			</div>
