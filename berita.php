@@ -1,3 +1,8 @@
+<?php
+	include_once "koneksi.php";
+	$sqlBerita = "SELECT * FROM tb_berita WHERE id_kategori=1 ORDER BY id DESC LIMIT 5";
+	$berita = mysqli_query($konek, $sqlBerita);
+?>
 <!DOCTYPE html>
 <html>
 
@@ -69,18 +74,47 @@
 		<div class="row">
 			<div class="col">
 				<h2 style="margin-top:1em; margin-bottom:0.5em">Berita</h2>
+				<?php
+					while ($row=mysqli_fetch_assoc($berita)) {
+				?>
 				<div class="card" style="margin-bottom:1em;">
 					<div class="card-block" style="padding:1em; ">
-						<h4 class="card-title">Judul</h4>
-						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-						<a href="#" class="btn btn-primary">Go somewhere</a>
+						<h4 class="card-title"><?php echo $row['judul']; ?></h4>
+						<p class="text-muted"><?php echo $row['author'].", ".$row['tanggal']; ?></p>
+						<?php if($row['gambar']!=''){ ?>
+						<img class="card-img-top" src="img/<?php echo $row['gambar']; ?>" alt="No image found">
+						<?php } ?>
+						<p class="card-text" align="justify">
+							<?php echo substr($row['isi'], 0, 400)."..."; ?>
+						</p>
+						<a href="<?php echo "detailberita.php?id=".$row['id']; ?>" class="btn btn-primary">Selengkapnya</a>
 					</div>
 				</div>
-				<div class="card" style="margin-bottom:1em;">
-					<div class="card-block" style="padding:1em; ">
-						<h4 class="card-title">Judul</h4>
-						<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-						<a href="#" class="btn btn-primary">Go somewhere</a>
+				<?php } ?>
+				<div class="row">
+					<div class="col">
+						<nav aria-label="...">
+							<ul class="pagination">
+								<li class="page-item disabled">
+									<a class="page-link" href="#" tabindex="-1">Previous</a>
+								</li>
+								<li class="page-item active">
+									<a class="page-link" href="#">1
+									<span class="sr-only">(current)</span>
+									</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#">2
+									</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#">3</a>
+								</li>
+								<li class="page-item">
+									<a class="page-link" href="#">Next</a>
+								</li>
+							</ul>
+						</nav>
 					</div>
 				</div>
 			</div>
@@ -143,82 +177,11 @@
 				</div>
 
 				<br>
-				<div class="card">
-					<div class="card-header bg-primary text-white">
-						Arsip Utama
-					</div>
-					<ul class="list-group list-group-flush">
-						<li class="list-group-item">
-							<small class="text-muted">kontributor, Jum, 20-Okt-2017 03:52:06</small>
-							<br>
-							<a href="#">Kunjungan Audiensi BNNP DIY Dengan Satgas Anti Narkoba Akakom (RAHASIA)</a>
-						</li>
-						<li class="list-group-item">
-							<small class="text-muted">kontributor, Sen, 2-Okt-2017 08:05:00</small>
-							<br>
-							<a href="#">Wisuda Diploma Dan Sarjana STMIK AKAKOM Yogyakarta Periode I Tahun Akademik ...</a>
-						</li>
-						<li class="list-group-item">
-							<small class="text-muted">admin, Jum, 29-Sep-2017 05:00:33</small>
-							<br>
-							<a href="#">Mahasiswa Akakom Akan Berangkat Ke Jepang</a>
-						</li>
-						<li class="list-group-item">
-							<small class="text-muted">admin, Jum, 29-Sep-2017 04:16:37</small>
-							<br>
-							<a href="#">Pelatihan & Sosialisasi Program Kegiatan Mahasiswa (PKM)</a>
-						</li>
-						<li class="list-group-item">
-							<small class="text-muted">admin, Kam, 14-Sep-2017 07:31:54</small>
-							<br>
-							<a href="#">Kegiatan PESONA AKAKOM 2017</a>
-						</li>
-						<li class="list-group-item">
-							<small class="text-muted">admin, Kam, 14-Sep-2017 07:07:24</small>
-							<br>
-							<a href="#">Kegiatan Confrence Dan Workshop OWASP 2017</a>
-						</li>
-						<li class="list-group-item">
-							<small class="text-muted">admin, Sen, 4-Sep-2017 06:02:51</small>
-							<br>
-							<a href="#">Workshop Training For Trainer Bersama NIIT</a>
-						</li>
-						<li class="list-group-item">
-							<small class="text-muted">admin, Kam, 31-Agt-2017 11:38:31</small>
-							<br>
-							<a href="#">PENGUMUMAN PESONA 2017 BAGI MAHASISWA BARU</a>
-						</li>
-					</ul>
-				</div>
+				<?php include "sidebar.php"; ?>
 			</div>
 		</div>
 		<br>
-		<div class="row">
-			<div class="col">
-				<nav aria-label="...">
-					<ul class="pagination">
-						<li class="page-item disabled">
-							<a class="page-link" href="#" tabindex="-1">Previous</a>
-						</li>
-						<li class="page-item">
-							<a class="page-link" href="#">1</a>
-						</li>
-						<li class="page-item active">
-							<a class="page-link" href="#">2
-								<span class="sr-only">(current)</span>
-							</a>
-						</li>
-						<li class="page-item">
-							<a class="page-link" href="#">3</a>
-						</li>
-						<li class="page-item">
-							<a class="page-link" href="#">Next</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
 
-		</div>
 	</div>
 	<br>
 	</div>

@@ -1,15 +1,22 @@
+<?php
+	include_once "koneksi.php";
+	$id = $_GET['id'];
+
+	$sqlBerita = "SELECT * FROM tb_berita WHERE id = '$id' ";
+	$berita = mysqli_query($konek, $sqlBerita);
+?>
 <!DOCTYPE html>
 <html>
 
 <head>
-	<title>STMIK Akakom</title>
+	<title>STMIK Akakom | Berita</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="css/bootstrap.css">
 </head>
 
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-		<a class="navbar-brand" href="index.php">STMIK Akakom | Berita</a>
+		<a class="navbar-brand" href="index.php">STMIK Akakom</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 		    aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -64,21 +71,24 @@
 			</form>
 		</div>
 	</nav>
-
+	<?php
+		$row=mysqli_fetch_assoc($berita);
+	?>
 	<div class="container">
 		<div class="row">
 			<div class="col">
-				<h2 style="margin-top:1em; margin-bottom:0.5em">Judul Berita</h2>
+				<h2 style="margin-top:1em; margin-bottom:0.5em"><?php echo $row['judul']; ?></h2>
+				<?php if($row['gambar']!=''){ ?>
+				<img class="card-img-top" src="img/<?php echo $row['gambar']; ?>" alt="No image found">
+				<?php } ?>
 				<div class="card" style="margin-bottom:1em;">
 					<div class="card-block" style="padding:1em; ">
-						<p class="card-title">Author, Tanggal</p>
-						<p class="card-text text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<p class="text-muted"><?php echo $row['author'].", ".$row['tanggal']; ?></p>
+						<p class="card-text text-justify"><?php echo $row['isi']; ?></p>
 					</div>
 				</div>
-
 			</div>
-
-			<div class="col-sm-3">
+		<div class="col-sm-3">
 				<br>
 				<div class="card">
 					<div class="card-header bg-primary text-white">
@@ -136,99 +146,23 @@
 				</div>
 
 				<br>
-				<div class="card">
-					<div class="card-header bg-primary text-white">
-						Arsip Utama
-					</div>
-					<ul class="list-group list-group-flush">
-						<li class="list-group-item">
-							<small class="text-muted">kontributor, Jum, 20-Okt-2017 03:52:06</small>
-							<br>
-							<a href="#">Kunjungan Audiensi BNNP DIY Dengan Satgas Anti Narkoba Akakom (RAHASIA)</a>
-						</li>
-						<li class="list-group-item">
-							<small class="text-muted">kontributor, Sen, 2-Okt-2017 08:05:00</small>
-							<br>
-							<a href="#">Wisuda Diploma Dan Sarjana STMIK AKAKOM Yogyakarta Periode I Tahun Akademik ...</a>
-						</li>
-						<li class="list-group-item">
-							<small class="text-muted">admin, Jum, 29-Sep-2017 05:00:33</small>
-							<br>
-							<a href="#">Mahasiswa Akakom Akan Berangkat Ke Jepang</a>
-						</li>
-						<li class="list-group-item">
-							<small class="text-muted">admin, Jum, 29-Sep-2017 04:16:37</small>
-							<br>
-							<a href="#">Pelatihan & Sosialisasi Program Kegiatan Mahasiswa (PKM)</a>
-						</li>
-						<li class="list-group-item">
-							<small class="text-muted">admin, Kam, 14-Sep-2017 07:31:54</small>
-							<br>
-							<a href="#">Kegiatan PESONA AKAKOM 2017</a>
-						</li>
-						<li class="list-group-item">
-							<small class="text-muted">admin, Kam, 14-Sep-2017 07:07:24</small>
-							<br>
-							<a href="#">Kegiatan Confrence Dan Workshop OWASP 2017</a>
-						</li>
-						<li class="list-group-item">
-							<small class="text-muted">admin, Sen, 4-Sep-2017 06:02:51</small>
-							<br>
-							<a href="#">Workshop Training For Trainer Bersama NIIT</a>
-						</li>
-						<li class="list-group-item">
-							<small class="text-muted">admin, Kam, 31-Agt-2017 11:38:31</small>
-							<br>
-							<a href="#">PENGUMUMAN PESONA 2017 BAGI MAHASISWA BARU</a>
-						</li>
-					</ul>
-				</div>
-			</div>
+				<?php include "sidebar.php"; ?>
 		</div>
+
 		<br>
-		<div class="row">
-			<div class="col">
-				<nav aria-label="...">
-					<ul class="pagination">
-						<li class="page-item disabled">
-							<a class="page-link" href="#" tabindex="-1">Previous</a>
-						</li>
-						<li class="page-item">
-							<a class="page-link" href="#">1</a>
-						</li>
-						<li class="page-item active">
-							<a class="page-link" href="#">2
-								<span class="sr-only">(current)</span>
-							</a>
-						</li>
-						<li class="page-item">
-							<a class="page-link" href="#">3</a>
-						</li>
-						<li class="page-item">
-							<a class="page-link" href="#">Next</a>
-						</li>
-					</ul>
-				</nav>
+	<br>
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<h4 class="display-12 text-danger">Yang Pertama dan Utama</h4>
+				<p class="lead" align="justify">
+					Yayasan Pendididkan Widya Bakti berdiri dengan Akta Notaris Nomor 43 tanggal 30 Juni 1979, sebagai penyelenggara pendidikan
+					tinggi dibidang komputer yang pertama di Jateng dan DIY dengan nama Akademi Aplikasi Komputer (AKAKOM). Tahun 1985 AKAKOM
+					menjadi AMIK AKAKOM dan akhirnya sejak tahun 1992 menjadi STMIK AKAKOM.
+				</p>
+				<hr class="my-4">
+				<img class="img-fluid" style="width:100%" src="img/jurusan.png">
 			</div>
-
 		</div>
-	</div>
-	<br>
-	</div>
-
-	<br>
-	<div class="jumbotron jumbotron-fluid">
-		<div class="container">
-			<h4 class="display-12 text-danger">Yang Pertama dan Utama</h4>
-			<p class="lead" align="justify">
-				Yayasan Pendididkan Widya Bakti berdiri dengan Akta Notaris Nomor 43 tanggal 30 Juni 1979, sebagai penyelenggara pendidikan
-				tinggi dibidang komputer yang pertama di Jateng dan DIY dengan nama Akademi Aplikasi Komputer (AKAKOM). Tahun 1985 AKAKOM
-				menjadi AMIK AKAKOM dan akhirnya sejak tahun 1992 menjadi STMIK AKAKOM.
-			</p>
-			<hr class="my-4">
-			<img class="img-fluid" style="width:100%" src="img/jurusan.png">
-		</div>
-	</div>
 	</div>
 
 	<script src="js/jquery-3.2.1.min.js"></script>

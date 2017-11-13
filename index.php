@@ -1,9 +1,7 @@
 <?php
 	include "koneksi.php";
 	$sqlHeadline = "SELECT * FROM tb_berita WHERE id_kategori=1 ORDER BY id DESC LIMIT 3";
-	$sqlUtama = "SELECT * FROM tb_berita WHERE arsip_utama=1 ORDER BY id DESC LIMIT 8";
 	$headline = mysqli_query($konek, $sqlHeadline);
-	$arsip = mysqli_query($konek, $sqlUtama);
 ?>
 <!DOCTYPE html>
 <html>
@@ -126,38 +124,22 @@
 		</div>
 		<br>
 		<div class="row">
-			<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-				<div class="card">
-					<div class="card-header bg-primary text-white">
-						Arsip Utama
-					</div>
-					<ul class="list-group list-group-flush">
-						<?php
-							while ($row=mysqli_fetch_assoc($arsip)) {
-						?>
-						<li class="list-group-item">
-							<small class="text-muted"><?php echo $row['author']; ?>, <?php echo $row['tanggal']; ?></small>
-							<br>
-							<a href="<?php echo "detailberita.php?id=".$row['id']; ?>"><?php echo $row['judul']; ?></a>
-						</li>
-						<?php } ?>
-					</ul>
-				</div>
-			</div>
-			<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-				<div class="row">
-					<div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-						<img class="img-fluid" src="img/programerBersertifikat.png">
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-						<img class="img-fluid" src="img/cisco-logo.gif">
-					</div>
-					<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-						<img class="img-fluid" src="img/jeni.jpg">
-					</div>
-				</div>
+		  <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+				<?php include "sidebar.php"; ?>
+				<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+			    <div class="row">
+			      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+			        <img class="img-fluid" src="img/programerBersertifikat.png">
+			      </div>
+			    </div>
+			    <div class="row">
+			      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+			        <img class="img-fluid" src="img/cisco-logo.gif">
+			      </div>
+			      <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+			        <img class="img-fluid" src="img/jeni.jpg">
+			      </div>
+			    </div>
 			</div>
 		</div>
 		<br>
